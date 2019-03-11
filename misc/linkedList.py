@@ -35,5 +35,6 @@ class LinkedList:
 if __name__ == "__main__":
     l = LinkedList(45)
     l.addHead(50)
-    l.addHead(30)
+    l.addHead("jimmy")
+    l.addHead(111.123)
     print(l)
