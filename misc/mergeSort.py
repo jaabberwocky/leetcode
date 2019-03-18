@@ -1,3 +1,7 @@
+'''
+Python implementation of MergeSort algorithm for learning purposes. Sorts integers in ascending order.
+'''
+
 import unittest
 import math
 
