@@ -128,6 +128,11 @@ class TestMergeSort(unittest.TestCase):
         a = [1,1,1,1,1,1]
         self.assertEqual(mergeSort.sort(a), [1,1,1,1,1,1])
 
+    def testSort5(self):
+        a = [6,1,3,4,5,2]
+        self.assertEqual(mergeSort.sort(a), [1,2,3,4,5,6])
+
+
 
 if __name__ == "__main__":
     unittest.main()
