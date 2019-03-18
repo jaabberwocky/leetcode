@@ -5,6 +5,7 @@ Python implementation of MergeSort algorithm for learning purposes. Sorts intege
 import unittest
 import math
 
+
 class mergeSort:
 
     @staticmethod
@@ -113,25 +114,24 @@ class TestMergeSort(unittest.TestCase):
         self.assertEqual(mergeSort.merge(a, b), [1, 1, 1, 1, 1, 1])
 
     def testSort1(self):
-        a = [1,2,3,4,5]
-        self.assertEqual(mergeSort.sort(a), [1,2,3,4,5])
+        a = [1, 2, 3, 4, 5]
+        self.assertEqual(mergeSort.sort(a), [1, 2, 3, 4, 5])
 
     def testSort2(self):
-        a = [5,4,3,2,1]
-        self.assertEqual(mergeSort.sort(a), [1,2,3,4,5])
+        a = [5, 4, 3, 2, 1]
+        self.assertEqual(mergeSort.sort(a), [1, 2, 3, 4, 5])
 
     def testSort3(self):
-        a = [5,4,3,3,2,1]
-        self.assertEqual(mergeSort.sort(a), [1,2,3,3,4,5])
+        a = [5, 4, 3, 3, 2, 1]
+        self.assertEqual(mergeSort.sort(a), [1, 2, 3, 3, 4, 5])
 
     def testSort4(self):
-        a = [1,1,1,1,1,1]
-        self.assertEqual(mergeSort.sort(a), [1,1,1,1,1,1])
+        a = [1, 1, 1, 1, 1, 1]
+        self.assertEqual(mergeSort.sort(a), [1, 1, 1, 1, 1, 1])
 
     def testSort5(self):
-        a = [6,1,3,4,5,2]
-        self.assertEqual(mergeSort.sort(a), [1,2,3,4,5,6])
-
+        a = [6, 1, 3, 4, 5, 2]
+        self.assertEqual(mergeSort.sort(a), [1, 2, 3, 4, 5, 6])
 
 
 if __name__ == "__main__":
