@@ -18,6 +18,12 @@ class LinkedList:
         self.head = node
         self.head.next = tmp
 
+    def print_all_nodes(self):
+        c = self.head
+        while c is not None:
+            print(c)
+            c = c.next
+
     def __len__(self):
         count = 0
         c = self.head
