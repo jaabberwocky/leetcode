@@ -6,12 +6,14 @@ class LinkedList:
     def set_head(self, node):
         self.head = node
 
-    def append_to_tail(self, node):
+    def append_to_tail(self, *nodes):
         # O(n)
         n = self.head
         while n.next is not None:
             n = n.next
-        n.next = node
+        for node in nodes:
+            n.next = node
+            n = n.next
 
     def prepend_to_head(self, node):
         tmp = self.head
