@@ -1,4 +1,4 @@
-from Queue import MyQueue
+from CustomQueue import MyQueue
 from Stack import MyStack
 
 
