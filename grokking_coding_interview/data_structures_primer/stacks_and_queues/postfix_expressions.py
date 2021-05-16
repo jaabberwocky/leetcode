@@ -23,3 +23,7 @@ class Test:
     def test_1(self):
         exp = "921 * - 8 - 4 +"
         assert evaluate_post_fix(exp) == 3
+
+    def test_2(self):
+        exp = "9, 4, 2, +, *, 6, 14, 7, /, +, *".replace(",", "")
+        print(evaluate_post_fix(exp))
